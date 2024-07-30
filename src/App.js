@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <p>
           Ella Upchurch
-        </p>
+        </p>        
         <a
           className="App-link"
           href="https://github.com/yellowellaphant"
@@ -17,9 +17,14 @@ function App() {
         >
           yellowellaphant (GitHub)
         </a>
+        <Minigame />
       </header>
     </div>
   );
+}
+
+function Minigame() {
+  return <div className='minigame-div'>minigame</div>;
 }
 
 export default App;
