@@ -19,7 +19,9 @@ function App() {
         </a>               
       </header>
       <Section />
-      <Minigame />
+      <div id='minigame-section'>
+        <Minigame />
+      </div>      
       <footer id='main-footer'>poof.. I exist</footer>
     </div>
   );

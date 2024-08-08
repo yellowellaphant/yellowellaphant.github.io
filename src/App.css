@@ -47,9 +47,13 @@
   }
 }
 
+#minigame-section {
+  min-height: 200vh;
+}
+
 .minigame-div {
-  width: 600px;
-  height: 300px;
+  width: 100vh;
+  height: 50vh;
   border: 2px solid lightseagreen;
   margin: 1vh;
   color: rgb(45, 45, 45);
@@ -57,8 +61,7 @@
 }
 
 #github-profile-pic {
-  width: 5vh;
-  
+  width: 5vh;  
 }
 .construction-cat-png {
   width: 500px;
