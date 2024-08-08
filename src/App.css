@@ -51,11 +51,22 @@
   width: 600px;
   height: 300px;
   border: 2px solid lightseagreen;
-  margin: auto;
+  margin: 1vh;
   color: rgb(45, 45, 45);
   font-size: xx-large;
 }
 
+#github-profile-pic {
+  width: 5vh;
+  
+}
 .construction-cat-png {
   width: 500px;
+}
+
+#main-footer {
+  min-height: 20vh;
+  background-color: #282c34;
+  color: aliceblue;
+  align-content: center;
 }

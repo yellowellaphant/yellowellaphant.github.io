@@ -15,11 +15,12 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          yellowellaphant (GitHub)
-        </a>        
+          <img id='github-profile-pic' src='https://avatars.githubusercontent.com/u/159342759?v=4'></img>yellowellaphant (GitHub)
+        </a>               
       </header>
       <Section />
       <Minigame />
+      <footer id='main-footer'>poof.. I exist</footer>
     </div>
   );
 }
