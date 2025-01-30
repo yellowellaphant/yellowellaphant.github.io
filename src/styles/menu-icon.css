@@ -1,0 +1,34 @@
+:root {
+    --bar-width: 2.5rem;      /* Adjust this value to scale the menu icon */
+    --bar-height: 0.5rem;
+    --bar-spacing: 0.4rem;
+    --transition-duration: 0.4s;
+    --bar-color: #241538;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar {
+    width: var(--bar-width);
+    height: var(--bar-height);
+    border-radius: 25px;
+    background-color: var(--bar-color);
+    margin: var(--bar-spacing) 0;
+    transition: transform var(--transition-duration) ease, opacity var(--transition-duration) ease;
+}
+
+/* Hamburger to X transition */
+.container.change .bar:nth-child(1) {
+    transform: translateY(0.9rem) rotate(-45deg);
+}
+
+.container.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.container.change .bar:nth-child(3) {
+    transform: translateY(-0.9rem) rotate(45deg);
+}
