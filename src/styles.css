@@ -1,0 +1,136 @@
+:root {
+    --background-color: #000000;
+    --accent-color-1: #577060;
+    --accent-color-2: #d8d1bf;
+    --accent-color-3: #f2c620;
+    --block-border-radius: 20px;
+  }
+  
+  .App {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: #fff;
+  }
+  
+  .navbar-container {
+    background-color: var(--accent-color-1);
+  }
+  
+  .container {
+    margin: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 0.5fr;
+    gap: 0.5em 0.5em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "greeting-block greeting-block about-block"
+      "greeting-block greeting-block about-block"
+      "working-skills-block working-skills-block about-block"
+      "projects-block projects-block about-block"
+      "projects-block projects-block art-block"
+      "airforce-block toolbox-block toolbox-block"
+      "footer footer footer";
+  }
+  
+  .block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .navbar {
+    grid-area: navbar;
+    background-color: var(--accent-color-1);
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0px 75px 75px 0px;
+  }
+  
+  .art-block {
+    grid-area: art-block;
+    background-color: var(--accent-color-3);
+    border-radius: 20px 20px 0px 20px;
+  }
+  
+  .airforce-block {
+    grid-area: airforce-block;
+    background-color: var(--accent-color-1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .toolbox-block {
+    grid-area: toolbox-block;
+    background-color: var(--accent-color-3);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .about-block {
+    grid-area: about-block;
+    background-color: var(--accent-color-1);
+    padding: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "profile-photo"
+      "interests"
+      "experience"
+      "experience";
+  }
+  
+  .about-block-top {
+    grid-area: profile-photo;
+    display: grid;
+    background-color: var(--background-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+  
+  .profile-photo {
+    background-color: var(--accent-color-3);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+  }
+  
+  .working-skills-block {
+    grid-area: working-skills-block;
+    background-color: var(--accent-color-3);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .projects-block {
+    grid-area: projects-block;
+    background-color: var(--accent-color-2);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .greeting-block {
+    grid-area: greeting-block;
+    background-color: var(--accent-color-2);
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: var(--accent-color-1);
+    margin-bottom: 0;
+    margin-right: 0;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 75px;
+  }
+  

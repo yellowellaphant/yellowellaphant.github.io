@@ -1,21 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/*<img src={logo} className="App-logo" alt="logo" />*/}
-                {/*<a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>*/}
-        <UnderConstruction />
-      </header>
+      <div class="container">
+        <div class="navbar block">1 navbar</div>
+        <div class="greeting-block block">2 Greeting</div>
+        <div class="about-block block">
+          <div class="about-block-top">
+            <div class="profile-photo block"></div>
+          </div>
+          4 about
+        </div>
+        <div class="working-skills-block">5 working skills</div>
+        <div class="projects-block block">6 projects</div>
+        <div class="art-block block">7 art</div>
+        <div class="airforce-block block">8 air force</div>
+        <div class="toolbox-block block">9 toolbox</div>
+        <div class="footer block">10 footer</div>
+      </div>
     </div>
   );
 }
