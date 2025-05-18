@@ -5,6 +5,10 @@
     --accent-color-3: #f2c620;
     --border-radius: 30px;
   }
+
+  h3 {
+    color: var(--accent-color-2)
+  }
   
   .App {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -36,8 +40,8 @@
   }
   
   .block {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   
   .navbar {
