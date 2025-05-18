@@ -98,6 +98,8 @@
     background-color: var(--accent-color-3);
     border-radius: var(--border-radius) var(--border-radius) 0px var(--border-radius);
   }
+
+  /* START Air Force styling */
   
   .airforce-block {
     grid-area: airforce-block;
@@ -105,6 +107,30 @@
     border-radius: var(--border-radius);
   }
   
+  .airforce-logo-wrapper {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .airforce-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #airforce-logo-filled {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .airforce-logo-wrapper:hover #airforce-logo-filled {
+    opacity: 1;
+  }
+
+  /* START Air Force styling */
+
   .toolbox-block {
     grid-area: toolbox-block;
     background-color: var(--accent-color-3);

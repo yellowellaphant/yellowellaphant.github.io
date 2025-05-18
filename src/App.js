@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import AirforceSection from './Components/AirforceSection.js';
+import AirforceBlock from './Components/AirforceSection.js';
 import './styles.css';
 
 function App() {
   return (
     <div className="App">
-      <div class="container">
-        <div class="navbar block">1 navbar</div>
-        <div class="greeting-block block">2 Greeting</div>
-        <div class="about-block block">
-          <div class="about-block-top">
-            <div class="profile-photo block"></div>
+      <div className="container">
+        <div className="navbar block">1 navbar</div>
+        <div className="greeting-block block">2 Greeting</div>
+        <div className="about-block block">
+          <div className="about-block-top">
+            <div className="profile-photo block"></div>
           </div>
           4 about
         </div>
-        <div class="working-skills-block">5 working skills</div>
-        <div class="projects-block block">6 projects</div>
-        <div class="art-block block">7 art</div>
-        <div class="airforce-block block">8 air force</div>
-        <div class="toolbox-block block">9 toolbox</div>
-        <div class="footer block">10 footer</div>
+        <div className="working-skills-block">5 working skills</div>
+        <div className="projects-block block">6 projects</div>
+        <div className="art-block block">7 art</div>
+        <AirforceSection />
+        <div className="toolbox-block block">9 toolbox</div>
+        <div className="footer block">10 footer</div>
       </div>
     </div>
   );
