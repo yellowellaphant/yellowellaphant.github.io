@@ -1,5 +1,6 @@
 import AirforceSection from './Components/AirforceSection.js';
 import AirforceBlock from './Components/AirforceSection.js';
+import ProfilePhotoSection from './Components/ProfilePhotoSection.js';
 import './styles.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         <div className="greeting-block block">2 Greeting</div>
         <div className="about-block block">
           <div className="about-block-top">
-            <div className="profile-photo block"></div>
+            <ProfilePhotoSection />
           </div>
           4 about
         </div>

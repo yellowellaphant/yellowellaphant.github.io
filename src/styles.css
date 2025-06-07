@@ -83,6 +83,8 @@
     aspect-ratio: 1/1;
   }
   
+  /* START PROFILE PHOTO STYLING */
+
   .profile-photo {
     background-color: var(--accent-color-3);
     border-radius: 50%;
@@ -90,7 +92,36 @@
     border-color: black;
     border-width: 10px;
   }
-  
+
+  .profile-image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .profile-image {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+
+  #profile-image-fill {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .profile-image-wrapper:hover #profile-image-fill {
+    opacity: 1;
+  }
+
+  /* END PROFILE PHOTO STYLING */
+
   .working-skills-block {
     grid-area: working-skills-block;
     background-color: var(--accent-color-3);
