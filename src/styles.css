@@ -55,6 +55,7 @@
 
   .navbar-link {
     font-size: xx-large;
+    font-weight: bold;
     color: var(--accent-color-2);
     text-decoration: none;
     margin: 1em;
@@ -63,7 +64,8 @@
   .navbar-link-container {
     justify-content: right;
     display: flex;
-    margin-right: 7em;
+    margin-top: 2em;
+    margin-right: 2em;
   }
 
 /* END NAVBAR STYLING */

@@ -1,3 +1,4 @@
+import AboutMeSection from './Components/AboutMeSection.js';
 import AirforceSection from './Components/AirforceSection.js';
 import AirforceBlock from './Components/AirforceSection.js';
 import Navbar from './Components/Navbar.js';
@@ -10,12 +11,7 @@ function App() {
       <div className="container">
         <Navbar />
         <div className="greeting-block block">2 Greeting</div>
-        <div className="about-block block">
-          <div className="about-block-top">
-            <ProfilePhotoSection />
-          </div>
-          4 about
-        </div>
+        <AboutMeSection />
         <div className="working-skills-block">5 working skills</div>
         <div className="projects-block block">6 projects</div>
         <div className="art-block block">7 art</div>
