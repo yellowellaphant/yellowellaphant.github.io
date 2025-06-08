@@ -17,10 +17,6 @@
     color: #fff;
   }
   
-  .navbar-container {
-    background-color: var(--accent-color-1);
-  }
-  
   .container {
     margin: 0.5em;
     display: grid;
@@ -44,6 +40,11 @@
     padding-bottom: 20px;
   }
   
+  /* START NAVBAR STYLING */
+  .navbar-container {
+    background-color: var(--accent-color-1);
+  }
+  
   .navbar {
     grid-area: navbar;
     background-color: var(--accent-color-1);
@@ -51,6 +52,21 @@
     margin-left: 0;
     border-radius: 0px 75px 75px 0px;
   }
+
+  .navbar-link {
+    font-size: xx-large;
+    color: var(--accent-color-2);
+    text-decoration: none;
+    margin: 1em;
+  }
+
+  .navbar-link-container {
+    justify-content: right;
+    display: flex;
+    margin-right: 7em;
+  }
+
+/* END NAVBAR STYLING */
 
   .greeting-block {
     grid-area: greeting-block;
@@ -145,7 +161,7 @@
   .airforce-logo-wrapper {
     width: 100%;
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
   }
 
   #placeholder-af-logo {
