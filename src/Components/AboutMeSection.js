@@ -11,4 +11,11 @@ function AboutMeSection() {
     )
 }
 
+
+function ExperienceSection() {
+    return (
+        <div>Experience Section</div>
+    )
+}
+
 export default AboutMeSection;

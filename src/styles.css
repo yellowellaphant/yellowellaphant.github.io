@@ -76,6 +76,8 @@
     border-radius: var(--border-radius) 0 var(--border-radius) 0;
   }
 
+/* START ABOUT ME STYLING */
+
   .about-block {
     grid-area: about-block;
     background-color: var(--accent-color-1);
@@ -100,7 +102,10 @@
     border-bottom-right-radius: 50%;
     aspect-ratio: 1/1;
   }
-  
+
+  /* END ABOUT ME STYLING */
+
+
   /* START PROFILE PHOTO STYLING */
 
   .profile-photo {
