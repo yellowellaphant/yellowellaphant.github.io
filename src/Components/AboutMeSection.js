@@ -6,16 +6,23 @@ function AboutMeSection() {
           <div className="about-block-top">
             <ProfilePhotoSection />
           </div>
-          4 about
+          <div className="about-me-title">ABOUT ME</div>
+          <InterestSection />
+          <ExperienceSection />
         </div>
-    )
+    );
 }
 
+function InterestSection() {
+    return (
+        <div>Interest Section</div>
+    );
+}
 
 function ExperienceSection() {
     return (
         <div>Experience Section</div>
-    )
+    );
 }
 
 export default AboutMeSection;

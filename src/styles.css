@@ -80,6 +80,7 @@
 
   .about-block {
     grid-area: about-block;
+    color: var(--accent-color-2);
     background-color: var(--accent-color-1);
     padding: 0px;
     border-radius: 0 0 var(--border-radius) var(--border-radius);
@@ -101,6 +102,10 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     aspect-ratio: 1/1;
+  }
+
+  .about-me-title {
+    margin: 1em;
   }
 
   /* END ABOUT ME STYLING */
