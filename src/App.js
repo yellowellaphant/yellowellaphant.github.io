@@ -1,6 +1,7 @@
 import AboutMeSection from './Components/AboutMeSection.js';
 import AirforceSection from './Components/AirforceSection.js';
 import AirforceBlock from './Components/AirforceSection.js';
+import GreetingSection from './Components/GreetingSection.js';
 import Navbar from './Components/Navbar.js';
 import ProfilePhotoSection from './Components/ProfilePhotoSection.js';
 import './styles.css';
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Navbar />
-        <div className="greeting-block block">2 Greeting</div>
+        <GreetingSection />
         <AboutMeSection />
         <div className="working-skills-block">5 working skills</div>
         <div className="projects-block block">6 projects</div>

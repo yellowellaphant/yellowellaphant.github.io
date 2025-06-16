@@ -11,7 +11,7 @@
   }
   
   .App {
-    font-family: 'Montserrat', 'Bodoni', 'Abril Fatface', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     background-color: var(--background-color);
     color: #fff;
@@ -36,8 +36,8 @@
   }
   
   .block {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   
   /* START NAVBAR STYLING */
@@ -70,11 +70,41 @@
 
 /* END NAVBAR STYLING */
 
+/* START GREETING STYLING */
+
   .greeting-block {
+    display: block;
     grid-area: greeting-block;
     background-color: var(--accent-color-2);
     border-radius: var(--border-radius) 0 var(--border-radius) 0;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    grid-template-areas:
+    "about-greeting"
+    "about-intro"
+    "about-connect"
+    "about-socials";
   }
+
+  .about-greeting {
+    grid-area: about-greeting;
+  }
+
+  .about-intro {
+    grid-area: about-greeting;
+  }
+
+  .about-connect {
+    grid-area: about-connect;
+  }
+
+  .about-socials {
+    grid-area: about-socials;
+  }
+
+/* END GREETING STYLING */
+
 
 /* START ABOUT ME STYLING */
 
