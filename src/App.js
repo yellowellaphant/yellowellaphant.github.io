@@ -1,21 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutMeSection from './Components/AboutMeSection.js';
+import AirforceSection from './Components/AirforceSection.js';
+import AirforceBlock from './Components/AirforceSection.js';
+import GreetingSection from './Components/GreetingSection.js';
+import Navbar from './Components/Navbar.js';
+import ProfilePhotoSection from './Components/ProfilePhotoSection.js';
+import './styles.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/*<img src={logo} className="App-logo" alt="logo" />*/}
-                {/*<a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>*/}
-        <UnderConstruction />
-      </header>
+      <div className="container">
+        <Navbar />
+        <GreetingSection />
+        <AboutMeSection />
+        <div className="working-skills-block">5 working skills</div>
+        <div className="projects-block block">6 projects</div>
+        <div className="art-block block">7 art</div>
+        <AirforceSection />
+        <div className="toolbox-block block">9 toolbox</div>
+        <div className="footer block">10 footer</div>
+      </div>
     </div>
   );
 }

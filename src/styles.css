@@ -1,0 +1,257 @@
+:root {
+    --background-color: #000000;
+    --accent-color-1: #577060;
+    --accent-color-2: #d8d1bf;
+    --accent-color-3: #f2c620;
+    --border-radius: 30px;
+  }
+
+  h3 {
+    color: var(--accent-color-2)
+  }
+  
+  .App {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: var(--background-color);
+    color: #fff;
+  }
+  
+  .container {
+    margin: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 1.5fr 1fr 1.5fr 1.5fr 0.5fr;
+    gap: 0.5em 0.5em;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar navbar navbar"
+      "greeting-block greeting-block about-block"
+      "greeting-block greeting-block about-block"
+      "working-skills-block working-skills-block about-block"
+      "projects-block projects-block about-block"
+      "projects-block projects-block art-block"
+      "airforce-block toolbox-block toolbox-block"
+      "footer footer footer";
+  }
+  
+  .block {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  /* START NAVBAR STYLING */
+  .navbar-container {
+    background-color: var(--accent-color-1);
+  }
+  
+  .navbar {
+    grid-area: navbar;
+    background-color: var(--accent-color-1);
+    margin-top: 0;
+    margin-left: 0;
+    border-radius: 0 100rem 100rem 0;
+  }
+
+  .navbar-link {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent-color-2);
+    text-decoration: none;
+    margin: 1em;
+  }
+
+  .navbar-link-container {
+    justify-content: right;
+    align-content: center;
+    display: flex;
+    margin-right: 2em;
+  }
+
+/* END NAVBAR STYLING */
+
+/* START GREETING STYLING */
+
+  .greeting-block {
+    display: block;
+    grid-area: greeting-block;
+    background-color: var(--accent-color-2);
+    border-radius: var(--border-radius) 0 var(--border-radius) 0;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    grid-template-areas:
+    "about-greeting"
+    "about-intro"
+    "about-connect"
+    "about-socials";
+  }
+
+  .about-greeting {
+    grid-area: about-greeting;
+  }
+
+  .about-intro {
+    grid-area: about-greeting;
+  }
+
+  .about-connect {
+    grid-area: about-connect;
+  }
+
+  .about-socials {
+    grid-area: about-socials;
+  }
+
+/* END GREETING STYLING */
+
+
+/* START ABOUT ME STYLING */
+
+  .about-block {
+    grid-area: about-block;
+    color: var(--accent-color-2);
+    background-color: var(--accent-color-1);
+    padding: 0px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "profile-photo"
+      "interests"
+      "experience"
+      "experience";
+  }
+  
+  .about-block-top {
+    grid-area: profile-photo;
+    display: grid;
+    background-color: var(--background-color);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    aspect-ratio: 1/1;
+  }
+
+  .about-me-title {
+    margin: 1em;
+  }
+
+  /* END ABOUT ME STYLING */
+
+
+  /* START PROFILE PHOTO STYLING */
+
+  .profile-photo {
+    background-color: var(--accent-color-3);
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+  }
+
+  .profile-image-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    height: 95%;
+  }
+
+  .profile-image {
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+
+  #profile-image-fill {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .profile-image-wrapper:hover #profile-image-fill {
+    opacity: 0;
+  }
+
+  /* END PROFILE PHOTO STYLING */
+
+  .working-skills-block {
+    grid-area: working-skills-block;
+    background-color: var(--accent-color-3);
+    border-radius: 0 var(--border-radius) 0 var(--border-radius);
+  }
+  
+  .art-block {
+    grid-area: art-block;
+    background-color: var(--accent-color-3);
+    border-radius: var(--border-radius) var(--border-radius) 0px var(--border-radius);
+  }
+
+  /* START Air Force styling */
+  
+  .airforce-block {
+    grid-area: airforce-block;
+    background-color: var(--accent-color-1);
+    border-radius: var(--border-radius);
+  }
+  
+  .airforce-logo-wrapper {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #placeholder-af-logo {
+    position: static;
+    width: 100%;
+    display: block;
+    visibility: hidden;
+  }
+
+  .airforce-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  #airforce-logo-filled {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .airforce-logo-wrapper:hover #airforce-logo-filled {
+    opacity: 1;
+  }
+
+  #under-af-logo-text {
+    position: relative;
+  }
+
+  /* END Air Force styling */
+
+  .toolbox-block {
+    grid-area: toolbox-block;
+    background-color: var(--accent-color-3);
+    border-radius: var(--border-radius) 0 var(--border-radius) 0;
+  }
+  
+  .projects-block {
+    grid-area: projects-block;
+    background-color: var(--accent-color-2);
+    border-radius: var(--border-radius) 0 var(--border-radius) var(--border-radius);
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: var(--accent-color-1);
+    margin-bottom: 0;
+    margin-right: 0;
+    border-radius: 100rem 0 0 100rem;
+  }
+  
